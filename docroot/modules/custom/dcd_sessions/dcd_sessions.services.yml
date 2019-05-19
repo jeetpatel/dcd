@@ -1,0 +1,8 @@
+services:
+  dcd_sessions.helper:
+    class: Drupal\dcd_sessions\Helper\SessionHelper
+    arguments: ['@logger.factory', '@current_user', '@plugin.manager.mail']
+  dcd_sessions.node.insert:
+    class: Drupal\dcd_sessions\EventSubscriber\SessionSubmitSubscriber
+    tags:
+    - { name: 'event_subscriber' }

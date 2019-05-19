@@ -1,0 +1,5 @@
+name: 'DCD Sessions'
+type: module
+description: 'Manage DCD sessions and workflow.'
+core: 8.x
+package: 'Custom'
